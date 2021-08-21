@@ -33,7 +33,7 @@ public class MyLinkedList {
 
         else {
             tail.setNext(newNode);
-            tail = newNode;
+            tail=newNode;
 
         }
     }
@@ -44,8 +44,15 @@ public class MyLinkedList {
         newNode.setNext(tempNode);
     }
 
+    public void popFirstNode() {
+        if(head == null)
+            System.out.println("Linked List is empty!");
+        else
+            head = head.getNext();
+    }
 
-    public void displayNode() {
+
+    public void displayNode () {
         INode current = head;
 
         System.out.print("Nodes are: ");

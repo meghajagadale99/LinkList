@@ -10,5 +10,7 @@ public class LinkList {
         myLinkedList.append(myThirdNode);
         myLinkedList.insertInMiddle(myFirstNode,mySecondNode);
         myLinkedList.displayNode();
+        myLinkedList.popFirstNode();
+        myLinkedList.displayNode();
     }
 }
