@@ -8,7 +8,6 @@ public class MyLinkedList {
         this.head = null;
         this.tail = null;
     }
-
     public void add(INode newNode) {
         if (this.tail == null) {
             this.tail = newNode;
@@ -22,8 +21,6 @@ public class MyLinkedList {
             head.setNext(tempNode);
         }
     }
-
-
     public void append(INode newNode) {
         if (this.tail == null)
             this.tail = newNode;
@@ -36,21 +33,17 @@ public class MyLinkedList {
             tail=newNode;
         }
     }
-
-
     public void insertInMiddle(MyNode myNode, MyNode newNode) {
         INode tempNode = myNode.getNext();
         myNode.setNext(newNode);
         newNode.setNext(tempNode);
     }
-
     public void popFirstNode() {
         if(head == null)
             System.out.println("Linked List is empty!");
         else
             head = head.getNext();
     }
-
     public void popLastNode() {
         INode tempNode = head;
         while (tempNode.getNext() != tail) {
@@ -58,6 +51,21 @@ public class MyLinkedList {
         }
         tempNode.setNext(null);
         tail = tempNode;
+    }
+    public void searchElement() {
+        if (head == null)
+            System.out.println("Linked List is empty");
+        else {
+            INode tempNode = head;
+            int position = 0;
+            while (tempNode != null) {
+                position++;
+                if (tempNode.getKey().equals(30)) {
+                    System.out.println("Key value 30 is present at position " + position + " in list");
+                }
+                tempNode = tempNode.getNext();
+            }
+        }
     }
 
     public void displayNode () {
