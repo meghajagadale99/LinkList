@@ -10,7 +10,8 @@ public class LinkList {
         myLinkedList.append(mySecondNode);
         myLinkedList.append(myThirdNode);
         myLinkedList.displayNode();
-        myLinkedList.searchElement();
+        myLinkedList.insertAtPosition(40, 2);
+        myLinkedList.displayNode();
 
     }
 }
