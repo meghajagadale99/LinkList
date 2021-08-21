@@ -52,6 +52,7 @@ public class MyLinkedList {
         tempNode.setNext(null);
         tail = tempNode;
     }
+
     public void searchElement() {
         if (head == null)
             System.out.println("Linked List is empty");
@@ -76,6 +77,15 @@ public class MyLinkedList {
         newNode.next = nodeAtPreviousIndex.next;
         nodeAtPreviousIndex.next = newNode;
 
+    }
+    public void deleteAtPosition(int position) {
+        MyNode previousNode = (MyNode) head;
+        MyNode currentNode = (MyNode) head;
+        for (int i = 0; i < position; i++) {
+            previousNode = currentNode;
+            currentNode = (MyNode) currentNode.next;
+        }
+        previousNode.next = currentNode.next;
     }
     public void displayNode () {
         INode current = head;

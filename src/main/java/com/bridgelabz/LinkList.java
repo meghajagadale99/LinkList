@@ -12,6 +12,8 @@ public class LinkList {
         myLinkedList.displayNode();
         myLinkedList.insertAtPosition(40, 2);
         myLinkedList.displayNode();
+        myLinkedList.deleteAtPosition(2);
+        myLinkedList.displayNode();
 
     }
 }
