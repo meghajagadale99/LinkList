@@ -9,7 +9,7 @@ public class MyNode<K> implements INode<K> {
         this.key = key;
         this.next = null;
     }
-
+    @Override
     public K getKey() {
         return key;
     }

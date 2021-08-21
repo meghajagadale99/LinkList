@@ -38,6 +38,12 @@ public class MyLinkedList {
         }
     }
 
+    public void insertInMiddle(MyNode myNode, MyNode newNode) {
+        INode tempNode = myNode.getNext();
+        myNode.setNext(newNode);
+        newNode.setNext(tempNode);
+    }
+
 
     public void displayNode() {
         INode current = head;
