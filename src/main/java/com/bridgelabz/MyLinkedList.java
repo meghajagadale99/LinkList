@@ -22,7 +22,24 @@ public class MyLinkedList {
             head.setNext(tempNode);
         }
     }
-    public void displayNode () {
+
+
+    public void append(INode newNode) {
+        if (this.tail == null)
+            this.tail = newNode;
+
+        if (this.head == null)
+            this.head = newNode;
+
+        else {
+            tail.setNext(newNode);
+            tail = newNode;
+
+        }
+    }
+
+
+    public void displayNode() {
         INode current = head;
 
         System.out.print("Nodes are: ");
@@ -38,5 +55,3 @@ public class MyLinkedList {
 
     }
 }
-
-
