@@ -14,4 +14,3 @@ public class MyNodeTest {
         Assert.assertTrue(result);
     }
 }
-

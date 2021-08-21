@@ -7,10 +7,11 @@ public class LinkList {
         MyNode<Integer> myThirdNode = new MyNode<>(70);
         MyLinkedList myLinkedList = new MyLinkedList();
         myLinkedList.append(myFirstNode);
+        myLinkedList.append(mySecondNode);
         myLinkedList.append(myThirdNode);
-        myLinkedList.insertInMiddle(myFirstNode,mySecondNode);
         myLinkedList.displayNode();
-        myLinkedList.popFirstNode();
+        myLinkedList.popLastNode();
         myLinkedList.displayNode();
+
     }
 }
