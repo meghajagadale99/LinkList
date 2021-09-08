@@ -87,6 +87,7 @@ public class MyLinkedList {
         }
         previousNode.next = currentNode.next;
     }
+
     public void displayNode () {
         INode current = head;
         System.out.print("Nodes are: ");
